@@ -1,0 +1,75 @@
+/* NotFoundPage.css */
+.not-found-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .not-found-content {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .not-found-content h1 {
+    font-size: 8rem;
+    margin: 0;
+    color: #4a90e2;
+    line-height: 1;
+  }
+  
+  .not-found-content h2 {
+    font-size: 2rem;
+    margin: 0 0 20px 0;
+    color: #333;
+  }
+  
+  .not-found-content p {
+    margin-bottom: 30px;
+    color: #666;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .not-found-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .not-found-image {
+    flex: 1;
+    min-width: 300px;
+    min-height: 300px;
+    background-image: url('../assets/images/404-illustration.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 768px) {
+    .not-found-container {
+      flex-direction: column-reverse;
+    }
+    
+    .not-found-content h1 {
+      font-size: 6rem;
+    }
+    
+    .not-found-content h2 {
+      font-size: 1.5rem;
+    }
+    
+    .not-found-image {
+      min-height: 200px;
+      margin-bottom: 20px;
+    }
+  }
